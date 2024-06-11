@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className={`${comfortaa.variable} ${englebert.variable}`}>
-      <body className='container'>{children}</body>
+      <body>{children}</body>
     </html>
   )
 }
