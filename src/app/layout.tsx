@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' className={`${comfortaa.variable} ${englebert.variable}`}>
-      <body>{children}</body>
+      <body className='bg-[#FBF3DE]'>{children}</body>
     </html>
   )
 }
