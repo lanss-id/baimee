@@ -15,8 +15,8 @@ const englebert = Englebert({
 })
 
 export const metadata: Metadata = {
-  title: 'Baimee Care',
-  description: 'Perawatan untuk sang ibu dan bayi',
+  title: 'Baimee Care - Layanan Kesehatan Terbaik untuk Ibu dan Bayi',
+  description: 'Baimee Care menyediakan perawatan kesehatan komprehensif dan berkualitas tinggi untuk ibu dan bayi, termasuk pijat bayi, pijat ibu hamil, baby spa, dan layanan kesehatan lainnya. Dapatkan perawatan terbaik untuk kesehatan dan kesejahteraan Anda dan bayi Anda bersama Baimee Care.',
 }
 
 export default function RootLayout({
