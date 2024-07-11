@@ -12,6 +12,8 @@ import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carouse
 import Autoplay from 'embla-carousel-autoplay'
 import { Icon } from '@iconify/react'
 import Image from 'next/image'
+import { CardDemo } from '@/components/cardNotif'
+import { MarqueeDemo } from '@/components/marquee'
 export default function Home() {
   const plugin = React.useRef(
     Autoplay({
@@ -40,11 +42,11 @@ export default function Home() {
                 berpengalaman dengan komitmen untuk memberikan dukungan yang komprehensif dan
                 mendukung kesehatan fisik dan emosional ibu serta bayi.
               </p>
-              <div className='cta relative mt-12 flex w-full items-center justify-center'>
-                <div className='left-50 absolute -top-1 h-14 w-40 -rotate-[8deg] rounded-lg bg-[#F9BF68]'></div>
+              <div className='cta group relative mt-12 flex w-full items-center justify-center'>
+                <div className='left-50 absolute -top-1 h-14 w-40 -rotate-[8deg] rounded-lg bg-[#F9BF68] group-hover:scale-105 group-hover:rotate-0 group-hover:h-16 group-hover:-top-2 transition-all duration-300'></div>
                 <a
                   href='https://api.whatsapp.com/send/?phone=6281313718785&text&type=phone_number&app_absent=0'
-                  className='font-englebert z-10 flex h-12 w-36 items-center justify-center rounded-lg bg-[#FFE6C5] pt-1 tracking-wide'
+                  className='font-englebert z-10 flex h-12 w-36 items-center justify-center rounded-lg bg-[#FFE6C5] pt-1 tracking-wide group-hover:scale-95 group-hover:shadow-lg transition-all duration-300'
                 >
                   Reservasi Yuk!
                 </a>
@@ -86,7 +88,7 @@ export default function Home() {
               </Carousel>
             </div>
             <div className='collapse-service w-full text-start text-lg mt-4'>
-              <Accordion type='single' defaultValue='item-3' collapsible>
+              <Accordion type='single' defaultValue='item-1' collapsible>
                 <AccordionItem value='item-1'>
                   <AccordionTrigger>Baby Care</AccordionTrigger>
                   <AccordionContent>
@@ -217,6 +219,24 @@ export default function Home() {
             <div className='why3 grid place-items-center px-6'>
               <Image src={'/image/commits.png'} width={102} height={102} alt='' />
               <p>Kami selalu memberikan komitmen yang terbaik untuk bunda dan anak</p>
+            </div>
+          </div>
+        </div>
+        <div className='h-32 w-full bg-gradient-to-t from-[#FFE7C8] to-[#FBF3DE] mt-12' />
+        <div className='Pricelist bg-[#FFE7C8]'>
+          <div className='container'>
+            <h1 className='text-5xl text-center'>Pricelist</h1>
+            <div className='flex flex-wrap justify-center mt-5 gap-3'>
+              <CardDemo />
+            </div>
+          </div>
+        </div>
+        <div className='h-32 w-full bg-gradient-to-t from-[#FBF3DE] to-[#FFE7C8]' />
+        <div className='testimoni bg-[#FBF3DE]'>
+          <div className='container'>
+            <h1 className='text-5xl text-center'>Testimoni</h1>
+            <div>
+              <MarqueeDemo></MarqueeDemo>
             </div>
           </div>
         </div>
