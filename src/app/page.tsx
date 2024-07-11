@@ -243,34 +243,34 @@ export default function Home() {
       </main>
       <div className='top-footer h-32 w-full bg-gradient-to-b from-[#FBF3DE] to-[#FFE7C8] mt-12' />
       <footer className='bg-[#FFE7C8] text-start gap-8 grid px-12 pt-10'>
-        <div className="container">
+        <div className="container flex-wrap space-y-4 md:space-y-0 md:flex md:justify-between">
           <div>
-          <h1 className='title text-3xl'>Baimee Mom & Baby Care</h1>
-          <p className='subtitle text-lg'>Layanan Kesehatan Untuk Ibu & Bayi</p>
-        </div>
-        <div className='contact'>
-          <h2 className='title-contact text-xl mb-2 font-semibold'>Kontak Kami</h2>
-          <div className='grid gap-1'>
-            <div className='icon'>
-              <Icon icon="ic:outline-email" width="1.2rem" height="1.2rem" />
-              <span>baimeecare@gmail.com</span>
-            </div>
-            <div className='icon'>
-              <Icon icon="ic:outline-whatsapp" width="1.2rem" height="1.2rem" />
-              <span>085211886309</span>
-            </div>
-            <div className='icon'>
-              <Icon icon="mdi:instagram" width="1.2rem" height="1.2rem" />
-              <span>baimeecare</span>
-            </div>
-            <div className='icon'>
-              <Icon icon="ic:baseline-tiktok" width="1.2rem" height="1.2rem"  />
-              <span>bidanshinta_baimeecare</span>
+            <h1 className='title text-3xl'>Baimee Mom & Baby Care</h1>
+            <p className='subtitle text-lg'>Layanan Kesehatan Untuk Ibu & Bayi</p>
+          </div>
+          <div className='contact'>
+            <h2 className='title-contact text-xl mb-2 font-semibold'>Kontak Kami</h2>
+            <div className='grid gap-1'>
+              <div className='icon'>
+                <Icon icon="ic:outline-email" width="1.2rem" height="1.2rem" />
+                <span>baimeecare@gmail.com</span>
+              </div>
+              <div className='icon'>
+                <Icon icon="ic:outline-whatsapp" width="1.2rem" height="1.2rem" />
+                <span>085211886309</span>
+              </div>
+              <div className='icon'>
+                <Icon icon="mdi:instagram" width="1.2rem" height="1.2rem" />
+                <span>baimeecare</span>
+              </div>
+              <div className='icon'>
+                <Icon icon="ic:baseline-tiktok" width="1.2rem" height="1.2rem"  />
+                <span>bidanshinta_baimeecare</span>
+              </div>
             </div>
           </div>
         </div>
         <p className='text-center text-sm text-gray-800 my-4'>copyright &copy; 2024 Baimee Mom & Baby Care</p>
-        </div>
       </footer>
     </>
   )
